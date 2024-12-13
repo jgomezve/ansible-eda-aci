@@ -1,0 +1,23 @@
+---
+namespace: jgomezve
+name: aci
+version: 1.0.1
+readme: README.md
+authors:
+- Shangxing Du <shdue@cisco.com>
+- Jorge Gomez <jgomezve@cisco.com>
+description: Ansible Plugin for EDA on ACI
+license_file: 'LICENSE'
+tags:
+ - cisco
+ - aci
+ - networking
+ - eda
+ - sdn
+dependencies:
+  "ansible.netcommon": "*"
+repository:  https://github.com/jgomezve/ansible-eda-aci
+documentation: https://github.com/jgomezve/ansible-eda-aci
+homepage: https://github.com/jgomezve/ansible-eda-aci
+issues: https://github.com/jgomezve/ansible-eda-aci/issue
+
