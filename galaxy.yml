@@ -1,10 +1,10 @@
 ---
 namespace: jgomezve
 name: aci
-version: 1.0.1
+version: 1.0.3
 readme: README.md
 authors:
-- Shangxing Du <shdue@cisco.com>
+- Shangxing Du <shdu@cisco.com>
 - Jorge Gomez <jgomezve@cisco.com>
 description: Ansible Plugin for EDA on ACI
 license_file: 'LICENSE'

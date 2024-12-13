@@ -76,7 +76,6 @@ def subscribe(hostname: str, token: str, rf_timeout: int, sub_urls: list[str]) -
         )
         cookie = {"APIC-cookie": token}
         sub_response = requests.get(sub_url, verify=False, cookies=cookie, timeout=60)
-        print(sub_response.content)
         if sub_response.ok:
             sub_id = sub_response.json()["subscriptionId"]
             sub_ids.append(sub_id)
@@ -135,7 +134,6 @@ async def main(queue: asyncio.Queue, args: Dict[str, Any]):
         asyncio.create_task(refresh(hostname, token, refresh_timeout, sub_ids))
 
         async for message in ws:
-            print(json.loads(message))
             await queue.put(json.loads(message))
 
 
